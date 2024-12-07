@@ -18,4 +18,4 @@ inoremap ii <Esc>
 
 " Themes
 set termguicolors
-" colorscheme onedark
+colorscheme sorbet

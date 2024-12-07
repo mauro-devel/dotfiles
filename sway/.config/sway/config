@@ -4,12 +4,12 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-default_border pixel 2
+default_border pixel 4
 font pango:Noto Sans 12
 client.focused "#bbccdd" "#bbccdd" "#ffffff" "#bbccdd"
 
-gaps inner 2px
-gaps outer 2px
+gaps inner 4px
+gaps outer 4px
 
 ### Variables
 # Logo key. Use Mod1 for Alt.
@@ -54,7 +54,7 @@ exec swayidle -w \
     timeout 300 'swaylock -f -c 000000' \
     timeout 600 'swaymsg "output * power off"' \
         resume 'swaymsg "output * power on"' \
-    before-sleep 'swaylock -f -c 000000 -i $HOME/Pictures/bg01.jpg'
+    before-sleep 'swaylock -f -c 000000 -i /home/mauricio/Pictures/bg01.jpg'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
